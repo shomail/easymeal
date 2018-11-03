@@ -196,3 +196,50 @@ header {
   color: #e67e22;
   border-bottom: 2px solid #e67e22;
 }
+
+/* ***************************** */
+/* FEATURES SECTION */
+/* ***************************** */
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* ***************************** */
+/* MEALS SECTION */
+/* ***************************** */
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meals-showcase li figure {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meals-showcase li figure img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.meals-showcase li figure img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
