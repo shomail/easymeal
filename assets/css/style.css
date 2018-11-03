@@ -16,6 +16,17 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* ***************************** */
 /* COMPONENTS */
 /* ***************************** */
@@ -242,4 +253,55 @@ header {
 .meals-showcase li figure img:hover {
   transform: scale(1.05);
   opacity: 1;
+}
+
+/* ***************************** */
+/* STEPS SECTION */
+/* ***************************** */
+
+.section-steps {
+  background-color: rgb(237, 237, 237);
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 15%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-right: 5%;
+  margin-top: 50px;
+}
+
+.app-screen {
+  width: 50%;
+}
+
+.work-steps {
+  margin-bottom: 50px;
+}
+
+.work-steps:last-of-type {
+  margin-bottom: 80px;
+}
+
+.work-steps div {
+  display: inline-block;
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  margin-right: 20px;
+  float: left;
+  font-size: 150%;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  padding-right: 10px;
 }
