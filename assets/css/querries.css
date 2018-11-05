@@ -1,0 +1,164 @@
+
+@media only screen and (max-width: 1200px) {
+  .row {
+    padding: 0 2%;
+  }
+
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+}
+
+@media only screen and (max-width: 1023px) {
+  body {font-size: 18px;}
+
+  section {padding: 60px 0;}
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .meals-showcase li figure:hover figcaption {
+    opacity: 1;
+    top: 50%;
+  }
+
+  .steps-box:first-child {
+    margin-top: 10px;
+  }
+
+  .steps-box:last-child {
+    margin-top: 30px;
+  }
+
+  .work-steps {
+    margin-bottom: 40px;
+  }
+
+  .work-steps:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .app-screen {
+    width: 60%;
+  }
+
+  .btn-app img {
+    padding-right: 5px;
+  }
+
+  .icon-sm {
+    width: 10px;
+  }
+
+  .city-feature {
+    font-size: 85%;
+  }
+
+  .plan-box {width: 100%; margin-left: 0}
+  .plan-price {font-size: 250%;}
+
+  .plan-box ul {
+    font-size: 80%;
+  }
+
+  .section-contact form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer p {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {font-size: 16px;}
+  section {padding: 30px 0; }
+  .row, .hero-text-box { padding: 0 4%; }
+  .hero-text-box {text-align: center;}
+  .col { width: 100%; margin: 0 0 4% 0; }
+  .main-nav { display: none; }
+
+  h1 {
+    font-size: 180%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  .long-copy {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .steps-box:first-child {
+    margin-top: 10px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .steps-box:last-child {
+    margin-top: 30px;
+  }
+
+  .work-steps {
+    margin-bottom: 20px;
+  }
+
+  .work-steps:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .work-steps div {
+    height: 35px;
+    width: 35px;
+    padding: 4px;
+    margin-right: 25px;
+    float: left;
+    font-size: 120%;
+  }
+
+  .app-screen {
+    width: 40%;
+  }
+
+  .btn-app img {
+    padding: 0 5%;
+  }
+
+  .meals-showcase li {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .footer-nav {
+    text-align: center;
+    float: none;
+  }
+  
+  .social-nav {
+    text-align: center;
+    float: none;
+    font-size: 150%;
+    margin-top: 30px;
+  }
+
+  .social-nav li {
+    margin-right: 25px;
+  }
+
+  footer p {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-contact form {width: 100%}
+  section { padding: 25px 0; }
+}

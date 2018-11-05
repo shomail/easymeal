@@ -17,6 +17,7 @@ html {
   font-family: 'Lato', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 20px;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
 
@@ -500,7 +501,6 @@ cite img {
 .section-contact form {
   width: 60%;
   margin: 0 auto;
-
 }
 
 input[type=text],
