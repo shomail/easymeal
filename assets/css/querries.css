@@ -9,6 +9,26 @@
     padding: 0 2%;
   }
 
+  footer .fa-facebook-f {
+    color: #3b5999;
+  }
+  
+  footer .fa-twitter {
+    color: #55acee;
+  }
+  
+  footer .fa-youtube {
+    color: #cd201f;
+  }
+  
+  footer .fa-instagram {
+    color: #e4405f;
+  }
+  
+  footer .fa-snapchat-ghost {
+    color: #fffc00;
+  }
+
 }
 
 @media only screen and (max-width: 1023px) {
