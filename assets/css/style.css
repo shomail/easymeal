@@ -645,3 +645,17 @@ footer .fa-instagram:hover {
 footer .fa-snapchat-ghost:hover {
   color: #fffc00;
 }
+
+/* ***************************** */
+/* ANIMATION SECTION */
+/* ***************************** */
+
+.hidden-features {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.show-features {
+  opacity: 1;
+}
+

@@ -3,11 +3,12 @@ polyfill();
 function stickyNav() {
 
   const nav = document.querySelector('nav');
-  
+  const hiddenFeatures = document.querySelector('.hidden-features');
   const section = document.querySelector('.section-features');
   
   if(window.scrollY >= section.offsetTop - 20) {
     nav.classList.add('sticky')
+    hiddenFeatures.classList.add('show-features');
   }else {
     nav.classList.remove('sticky')
   }
