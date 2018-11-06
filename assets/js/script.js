@@ -1,18 +1,17 @@
 polyfill();
-const nav = document.querySelector('nav');
-const section = document.querySelector('.section-features');
-
-const sectionTop = section.offsetTop;
 
 function stickyNav() {
+
+  const nav = document.querySelector('nav');
+  
+  const section = document.querySelector('.section-features');
+  
   if(window.scrollY >= section.offsetTop - 20) {
     nav.classList.add('sticky')
   }else {
     nav.classList.remove('sticky')
   }
 }
-
-window.addEventListener('scroll', stickyNav);
 
 function smoothScroll(element) {
   element.preventDefault();
@@ -30,3 +29,6 @@ function smoothScroll(element) {
 const btnLinks = document.querySelectorAll('.btn-link');
 
 btnLinks.forEach(elem => elem.addEventListener('click', smoothScroll))
+
+window.addEventListener('scroll', stickyNav);
+
