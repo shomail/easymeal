@@ -156,11 +156,22 @@
   }
 
   .meals-showcase li {
-    display: block;
+    display: inline-block;
     float: none;
-    width: 100%;
+    width: 45%;
+    margin-left: 3%;
     margin-bottom: 5px;
   }
+
+  .btn-app {
+    display: inline-block;
+    width: 100%;
+    margin: 5px auto;
+    text-align: center;
+    /* padding-right: 0px; */
+  }
+
+  /* .btn-app img {} */
 
   .footer-nav {
     text-align: center;
