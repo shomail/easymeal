@@ -111,6 +111,8 @@
     font-size: 180%;
   }
 
+
+
   h2 {
     font-size: 150%;
   }
@@ -160,7 +162,7 @@
     float: none;
     width: 45%;
     margin-left: 3%;
-    margin-bottom: 5px;
+    margin-bottom: 3%;
   }
 
   .btn-app {
@@ -168,10 +170,7 @@
     width: 100%;
     margin: 5px auto;
     text-align: center;
-    /* padding-right: 0px; */
   }
-
-  /* .btn-app img {} */
 
   .footer-nav {
     text-align: center;
@@ -195,6 +194,20 @@
 }
 
 @media only screen and (max-width: 480px) {
+
   .section-contact form {width: 100%}
+  input[type='submit'] {
+    margin-left: 33%;
+  }
   section { padding: 25px 0; }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero-text-box .btn {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  footer {
+    padding: 30px 0;
+  }
 }
