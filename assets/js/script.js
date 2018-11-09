@@ -19,7 +19,8 @@ function stickyNav() {
 function smoothScroll(element) {
   element.preventDefault();
 
-  document.querySelector('.main-nav').style.right = '-100vw';
+  document.querySelector('.main-nav').style.right = '-50vw';
+  document.querySelector('.main-nav').style.display = 'none';
   document.querySelector('.mobile-nav-icon i').classList.remove('fa-times');
   document.querySelector('.mobile-nav-icon i').classList.add('fa-bars');
 
@@ -37,14 +38,20 @@ function toggleNav() {
   const nav = document.querySelector('.main-nav');
   const btn = document.querySelector('.mobile-nav-icon i');
   console.log(nav.style.right);
-  if (nav.style.right === '-100vw' || !nav.style.right) {
-    nav.style.right = '0';
-    btn.classList.remove('fa-bars');
-    btn.classList.add('fa-times');
+  if (nav.style.display === 'none' || !nav.style.display) {
+    nav.style.display = 'block';
+    setTimeout(() => {
+      nav.style.right = '0';
+      btn.classList.remove('fa-bars');
+      btn.classList.add('fa-times');
+    }, 200);
   } else {
-    nav.style.right = '-100vw';
+    nav.style.right = '-50vw';
     btn.classList.remove('fa-times');
     btn.classList.add('fa-bars');
+    setTimeout(() => {
+      nav.style.display = 'none';
+    }, 200);
   }
 }
 
