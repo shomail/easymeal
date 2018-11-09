@@ -4,6 +4,8 @@ function stickyNav() {
   const nav = document.querySelector('nav');
   const hiddenFeatures = document.querySelector('.hidden-features');
   const section = document.querySelector('.section-features');
+  const lazyImgs = document.querySelectorAll('img.lazy');
+  const sectionTestimonials = document.querySelector('.section-testimonials');
 
   if (window.scrollY >= section.offsetTop - 150) {
     hiddenFeatures.classList.add('show-features');
@@ -11,6 +13,14 @@ function stickyNav() {
 
   if (window.scrollY >= section.offsetTop - 50) {
     nav.classList.add('sticky');
+    if (lazyImgs.length) {
+      lazyImgs.forEach(img => {
+        img.src = img.dataset.src;
+        img.classList.remove('lazy');
+      });
+    }
+    sectionTestimonials.style.backgroundImage =
+      "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('assets/css/img/back-customers-min.jpg')";
   } else {
     nav.classList.remove('sticky');
   }
