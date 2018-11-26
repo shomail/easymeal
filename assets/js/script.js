@@ -29,11 +29,6 @@ function stickyNav() {
 function smoothScroll(element) {
   element.preventDefault();
 
-  document.querySelector('.main-nav').style.right = '-50vw';
-  document.querySelector('.main-nav').style.display = 'none';
-  document.querySelector('.mobile-nav-icon i').classList.remove('fa-times');
-  document.querySelector('.mobile-nav-icon i').classList.add('fa-bars');
-
   const targetName = element.target.getAttribute('data-target');
 
   const targetElem = document.querySelector(`.${targetName}`);
@@ -47,7 +42,6 @@ function smoothScroll(element) {
 function toggleNav() {
   const nav = document.querySelector('.main-nav');
   const btn = document.querySelector('.mobile-nav-icon i');
-  console.log(nav.style.right);
   if (nav.style.display === 'none' || !nav.style.display) {
     nav.style.display = 'block';
     setTimeout(() => {
